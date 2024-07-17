@@ -40,7 +40,7 @@ nav {
 	justify-content: center;
 	padding: 10px 0;
 	position: sticky;
-  	top: 0;
+	top: 0;
 }
 
 nav a, nav span {
@@ -51,9 +51,8 @@ nav a, nav span {
 	transition: background-color 0.3s;
 }
 
-
 nav a:hover {
-	background-color: #005bb5;	
+	background-color: #005bb5;
 	transform: scale(1.04);
 }
 
@@ -73,7 +72,7 @@ section div {
 	margin: 5px;
 	border: 1px solid #ddd;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	flex: 1 1 calc(30% - 40px); 
+	flex: 1 1 calc(30% - 40px);
 	box-sizing: border-box;
 }
 
@@ -108,8 +107,6 @@ header {
 .logo {
 	max-width: 100px;
 }
-
-
 
 nav {
 	background-color: #0066cc;
@@ -154,7 +151,6 @@ section {
 	flex: 1 1 calc(30% - 40px);
 	box-sizing: border-box;
 }
-
 
 label {
 	display: block;
@@ -205,21 +201,24 @@ img {
 }
 
 .services li:hover {
-	background-color: #005bb5;	
+	background-color: #005bb5;
 	transform: scale(1.04);
 }
 
 .services li:active {
 	animation: blink 0.2s ease-in-out 2;
 }
- @keyframes blink {
-     0%, 100% {
-        opacity: 1;
-     }
-     50% {
-        opacity: 0;
-     }
- }
+
+@keyframes blink { 
+	0%, 100% {
+	opacity: 1;
+}
+
+50%
+{
+opacity:0;
+}
+}
 .services a {
 	display: inline-block;
 	color: white;
@@ -227,65 +226,97 @@ img {
 	width: 100%;
 }
 
-#aboutSection{
+#aboutSection {
 	display: none;
 }
-section p{
-	font-size:1.2em;
-	text-align:justify;
+
+section p {
+	font-size: 1.2em;
+	text-align: justify;
 	margin: 5px 0px;
 }
-.oner{
+
+.oner {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-.img{
-	box-shadow:0px 0px black;
+
+.img {
+	box-shadow: 0px 0px black;
 	margin: 5px;
 	padding: 0px;
 	border: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction:column; 
+	flex-direction: column;
 }
-.img img{
+
+.img img {
 	border-radius: 50%;
 	width: 60%;
-	
 }
-.contect img{
+
+.contect img {
 	width: 30px;
 	display: inline-block;
 	margin: 0px;
 }
-footer{
+
+footer {
 	display: flex;
 	background-color: black;
 	padding: 10px;
 	color: #afafaf;
 }
-footer section{
-background-color: black;
-border: none;
-box-shadow: 1px 0px 2px white;
-	}
-footer .img{
+
+footer section {
+	background-color: black;
+	border: none;
+	box-shadow: 0px 0px 8px #ffffff6e;
+}
+
+footer .img {
 	width: 20px;
 	border-radius: 50%;
 }
-.success{
+
+.success {
 	background-color: #3af93a26;
-    color: #199f19;
-    padding: 8px;
-    margin: 5px;
-    text-align: center;
+	color: #199f19;
+	padding: 8px;
+	margin: 5px;
+	text-align: center;
 }
-.error{
+
+.error {
 	background-color: #ff2f2f26;
-    color: red;
-    padding: 8px;
-    margin: 5px;
-    text-align: center;
+	color: red;
+	padding: 8px;
+	margin: 5px;
+	text-align: center;
+}
+
+.active {
+	font-size: 20px;
+	margin: 0px;
+	background-color: #005bb9;
+	box-shadow: 0px 0px 2px white;
+	text-shadow: 2px 1px black;
+}
+
+#loader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	background-image: url("../images/loader1.gif");
+	z-index: 10;
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: white;
+	display: none;
 }

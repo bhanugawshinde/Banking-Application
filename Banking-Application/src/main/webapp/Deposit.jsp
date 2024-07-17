@@ -27,7 +27,7 @@ text-shadow: 2px 1px black;
 	<form action="Deposit" method="post" id='myForm'>
 		<div>
 			<label for="accountNo">Account No: </label> <input type="text"
-				name="accountNo" id="accountNo" required>
+				name="accountNo" id="accountNo" pattern="^\S{1,50}$" required>
 		</div>
 		<div>
 			<label for="amount">Amount: </label> <input type="number"

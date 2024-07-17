@@ -26,15 +26,15 @@
 	<form action="Withdraw" method="post" id='myForm'>
 		<div>
 			<label for="accountNo">Account No: </label> <input type="text"
-				name="accountNo" id="accountNo" required>
+				name="accountNo" id="accountNo" pattern="^\S{1,50}$" required>
 		</div>
 		<div>
 			<label for="userName">User Name:</label> <input type="text"
-				name="userName" id="userName" required>
+				name="userName" id="userName" pattern="^\S{1,50}$" required>
 		</div>
 		<div>
 			<label for="password">Password:</label> <input type="password"
-				name="password" id="password" required>
+				name="password" id="password" pattern="^\S{1,50}$" required>
 		</div>
 		<div>
 			<label for="amount">Amount: </label> <input type="number"

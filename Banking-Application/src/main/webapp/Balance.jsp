@@ -7,7 +7,7 @@
 <style type="text/css">
 .Balance{
 font-size: 20px;
-margin 0px;
+margin: 0px;
 background-color: #005bb9;
 box-shadow: 0px 0px 2px white;
 text-shadow: 2px 1px black;

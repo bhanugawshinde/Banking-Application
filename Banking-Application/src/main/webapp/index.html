@@ -6,7 +6,8 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header>
+	<div id=loader></div>
+	<header >
 		<div class="logo-container">
 			<img src="images/logo.png" alt="Apana Bank Logo" class="logo">
 		</div>
@@ -21,8 +22,8 @@
 			class=CheckBalance>Balance</a> <a href="Deposit.jsp"
 			data-page="Deposit.jsp" class=Deposit>Deposit</a> <a
 			href="Withdraw.jsp" data-page="Withdraw.jsp" class=Withdraw>Withdraw</a>
-		<a href="Transfer.jsp" data-page="Transfer.jsp" class=Transfer>Transfer
-		</a> <a href="CloseAccount.jsp" data-page="CloseAccount.jsp"
+		<a href="Transfer.jsp" data-page="Transfer.jsp" class=Transfer>Transfer</a>
+		<a href="CloseAccount.jsp" data-page="CloseAccount.jsp"
 			class=CloseAccount>Close A/C</a> <span><a id=aboutUs
 			href="About.html" data-page="About.html">About Us</a></span>
 	</nav>
@@ -55,25 +56,6 @@
 						Passionate about learning and technology, I have achieved a
 						LeetCode 50 Days Badge.</p>
 				</div>
-				<div class=emp>
-					<h3>Employees</h3>
-					<img alt="Employee" src="images/emp.jpeg">
-					<p>Evergreen Bank's growth is propelled by a skilled team:
-						Sarah, retail head, drives acquisition; David, CFO, ensures
-						financial integrity; Lisa, branch manager, excels in customer
-						service; Mark, digital specialist, innovates online platforms;
-						Emily, compliance officer, ensures regulatory adherence. Together,
-						they foster innovation, customer satisfaction, and sustainable
-						growth.</p>
-					<p>At our bank, we foster a culture of collaboration,
-						innovation, and growth. Our employees are encouraged to share
-						ideas, work as a team, and embrace continuous learning. We
-						prioritize open communication, respect, and diversity, creating an
-						inclusive environment where every individual's contributions are
-						valued and celebrated.</p>
-					<img alt="Employee" src="images/emp2.jpg">
-				</div>
-
 			</section>
 			<section class="contect">
 				<h2>Contact Us</h2>
@@ -131,6 +113,75 @@
 					</table>
 				</div>
 			</section>
+			<section>
+				<div class=emp>
+					<h3>Employees</h3>
+					<div class=img>
+						<img alt="Employee" src="images/emp.jpeg"
+							style="border-radius: unset;">
+					</div>
+					<p>Evergreen Bank's growth is propelled by a skilled team:
+						Sarah, retail head, drives acquisition; David, CFO, ensures
+						financial integrity; Lisa, branch manager, excels in customer
+						service; Mark, digital specialist, innovates online platforms;
+						Emily, compliance officer, ensures regulatory adherence. Together,
+						they foster innovation, customer satisfaction, and sustainable
+						growth.</p>
+					<p>At our bank, we foster a culture of collaboration,
+						innovation, and growth. Our employees are encouraged to share
+						ideas, work as a team, and embrace continuous learning. We
+						prioritize open communication, respect, and diversity, creating an
+						inclusive environment where every individual's contributions are
+						valued and celebrated.</p>
+					<br> <img alt="Employee" src="images/emp2.jpg"> <br>
+					<h4>Roles and Responsibilities</h4>
+					<p>Bank employees play a crucial role in the financial
+						industry, ensuring the smooth operation of banking services and
+						maintaining customer trust. Their responsibilities vary widely
+						based on their specific roles, which can include tellers, customer
+						service representatives, loan officers, financial advisors, and
+						branch managers.
+					<p></p>
+					<ol>
+						<li>
+							<h5>Tellers:</h5>
+							<ul>
+								<li>Primary Role: Tellers are often the first point of contact for customers. They handle routine transactions such as deposits, withdrawals, and check cashing.</li>
+								<li>Skills Required: Accuracy, attention to detail, and excellent customer service skills are essential. Tellers must also be proficient with bank software and financial regulations.</li>
+							</ul>
+						</li>
+						<li>
+							<h5>Customer Service Representatives:</h5>
+							<ul>
+								<li>Primary Role: These employees assist customers with account inquiries, resolving issues, and providing information about bank products and services.</li>
+								<li>Skills Required: Strong communication skills, problem-solving abilities, and a thorough understanding of the bank's offerings.</li>
+							</ul>
+						</li>
+						<li>
+							<h5>Loan Officers:</h5>
+							<ul>
+								<li>Primary Role: Loan officers evaluate, authorize, or recommend approval of loan applications. They work with individuals and businesses to assess creditworthiness and financial history.</li>
+								<li>Skills Required: Analytical skills, attention to detail, and a strong understanding of lending regulations and risk assessment.</li>
+							</ul>
+						</li>
+						<li>
+							<h5>Financial Advisors:</h5>
+							<ul>
+								<li>Primary Role: Financial advisors help clients plan their financial futures by offering advice on investments, retirement plans, and other financial products.</li>
+								<li>Skills Required: In-depth knowledge of financial markets, strong interpersonal skills, and the ability to build long-term relationships with clients.</li>
+							</ul>
+						</li>
+						<li>
+							<h5>Branch Managers:</h5>
+							<ul>
+								<li>Primary Role: Branch managers oversee the daily operations of a bank branch, ensuring that employees provide excellent customer service and that the branch meets its financial targets.</li>
+								<li>Skills Required: Leadership skills, financial acumen, and the ability to manage and motivate staff.</li>
+							</ul>
+						</li>
+
+					</ol>
+				</div>
+			</section>
 
 		</section>
 		<section id="content-section" class="flex">
@@ -178,7 +229,7 @@
 			<ul>
 				<li>Apana Bank</li>
 				<li>Address: Hydrabad Telengana</li>
-				<li> &copy; Copyright</li>
+				<li>&copy; Copyright</li>
 			</ul>
 		</section>
 		<section>
@@ -188,7 +239,7 @@
 				<li>Withdraw</li>
 				<li>Deposit</li>
 				<li>Transfer</li>
-				
+
 			</ul>
 		</section>
 
@@ -204,7 +255,8 @@
 			<h2>Contact</h2>
 			<table>
 				<tr>
-					<td> <img class=img alt="tel" src="images/telephone.png" width="100px"> </td>
+					<td><img class=img alt="tel" src="images/telephone.png"
+						width="100px"></td>
 					<td>
 						<p>+91 9685325783</p>
 					</td>

@@ -26,11 +26,11 @@ text-shadow: 2px 1px black;
 	<form action="Balance" method="post" id='myForm'>
 		<div>
 			<label for="userName">User Name:</label> <input type="text"
-				name="userName" id="userName" required>
+				name="userName" id="userName" pattern="^\S{1,50}$" required>
 		</div>
 		<div>
 			<label for="password">Password:</label> <input type="password"
-				name="password" id="password" required>
+				name="password" id="password" pattern="^\S{1,50}$" required>
 		</div>
 
 		<div>

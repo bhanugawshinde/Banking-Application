@@ -26,15 +26,15 @@
 	<form action="CreateAccount" method="post" id='myForm'>
 		<div>
 			<label for="userName">User Name:</label>
-			<input type="text"	name="userName" id="userName" pattern="\S" required>
+			<input type="text"	name="userName" id="userName" pattern="^\S{1,50}$" required>
 		</div>
 		<div>
 			<label for="password">Password:</label> <input type="password"
-				name="password" id="password" required>
+				name="password" id="password" pattern="^\S{1,50}$" required>
 		</div>
 		<div>
 			<label for="rePassword">Re-enter Password:</label> <input
-				type="password" name="rePassword" id="rePassword" required>
+				type="password" name="rePassword" pattern="^\S{1,50}$" id="rePassword" required>
 		</div>
 		<div>
 			<label for="amount">Amount:</label> <input type="number"
@@ -42,11 +42,11 @@
 		</div>
 		<div>
 			<label for="address">Address:</label> <input type="text"
-				name="address" id="address" required pattern="/S">
+				name="address" id="address" required maxlength="50">
 		</div>
 		<div>
 			<label for="phone">Phone:</label> <input type="tel" name="phone"
-				id="phone" required >
+				id="phone" maxlength="10" required >
 		</div>
 		<div>
 			<button type="submit" value=submit>Submit</button>
